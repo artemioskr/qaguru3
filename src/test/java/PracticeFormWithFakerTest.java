@@ -42,8 +42,7 @@ public class PracticeFormWithFakerTest {
         $("#subjectsInput").setValue(subject).pressEnter();
         $(byText(hobbies)).click();
         $("#uploadPicture").uploadFile(new File("src/test/resources/frog.jpg"));
-        $("#currentAddress").setValue(address);
-        $("#currentAddress").scrollTo();
+        $("#currentAddress").setValue(address).scrollTo();
         $("#state").click();
         $("#stateCity-wrapper").$(byText(state)).click();
         $("#city").click();
